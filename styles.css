@@ -1,0 +1,246 @@
+
+/* Estilo geral do body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+    background-color: #000;
+    color: white;
+    overflow: hidden;
+}
+
+/* Sobreposição de fundo */
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+/* Estilo do título geral */
+.title {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 60px; /* Tamanho maior para o título */
+    color: #e0e0e0; /* Cinza claro e reluzente */
+    text-shadow: 
+        2px 2px 5px rgba(0, 0, 0, 0.7), /* Sombra escura com maior desfocagem */
+        -2px -2px 5px rgba(0, 0, 0, 0.7), /* Sombra escura com maior desfocagem, em direção oposta */
+        2px -2px 5px rgba(0, 0, 0, 0.7), /* Sombra escura com maior desfocagem, em direção oposta */
+        -2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra escura com maior desfocagem, em direção oposta */
+    z-index: 1;
+}
+
+/* Estilo da tela de login */
+.login-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: rgba(0, 0, 0, 0.7);
+    background-image: url("../img/fundo.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Formulário de login */
+#login-form {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    border: 3px solid #ff9800;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+    width: 350px;
+}
+
+/* Campos de entrada */
+#login-form input {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin: 15px auto;
+    border: 2px solid #ff9800;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Botão de login */
+#login-form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    font-family: 'Press Start 2P', cursive;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#login-form button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#login-form button:active {
+    background-color: #1e7e34;
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#game-screen {
+    display: none; /* Ocultar a tela do jogo por padrão */
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 60px); /* Ajusta a altura para não sobrepor o título */
+    padding-top: 60px; /* Adiciona espaço no topo para o título */
+}
+
+/* Container do jogo */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+}
+
+/* Estilo para os textos das mensagens do jogo */
+.container h1, .container p, .message-default {
+    font-size: 20px; /* Tamanho maior para as mensagens */
+    color: #e0e0e0; /* Cor do texto */
+    text-shadow: 
+        2px 2px 5px rgba(0, 0, 0, 0.7), /* Sombra escura com maior desfocagem */
+        -2px -2px 5px rgba(0, 0, 0, 0.7), /* Sombra escura com maior desfocagem, em direção oposta */
+        2px -2px 5px rgba(0, 0, 0, 0.7), /* Sombra escura com maior desfocagem, em direção oposta */
+        -2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra escura com maior desfocagem, em direção oposta */
+}
+
+/* Estilo para a mensagem padrão */
+.message-default {
+    font-size: 20px; /* Tamanho maior para a mensagem padrão */
+    color: #e0e0e0; /* Cor do texto */
+    
+    text-shadow: 
+        2px 2px 5px rgba(0, 0, 0, 0.7), /* Sombra escura com maior desfocagem */
+        -2px -2px 5px rgba(0, 0, 0, 0.7), /* Sombra escura com maior desfocagem, em direção oposta */
+        2px -2px 5px rgba(0, 0, 0, 0.7), /* Sombra escura com maior desfocagem, em direção oposta */
+        -2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra escura com maior desfocagem, em direção oposta */
+    max-width: 300px;
+}
+
+/* Botões gerais */
+button {
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+
+/* Botão de atirar */
+#atirar {
+    background-color: #ff9800;
+}
+
+#atirar:hover {
+    background-color: #e68900;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#atirar:active {
+    background-color: #ffffff;
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Botão de bomba */
+#bomba {
+    background-color: #ffffff;
+}
+
+#bomba:hover {
+    background-color: #f5f5f5;
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+#bomba:active {
+    background-color: #ffffff;
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo do botão de mostrar regras */
+.show-rules-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.show-rules-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.show-rules-button:active {
+    background-color: #004080;
+    transform: scale(0.95);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Classe para esconder o botão */
+.hide-button {
+    display: none;
+}
+
+
+
+/* Regras do jogo */
+.regras {
+    position: fixed;
+    bottom: -10px;
+    right: 20px;
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-radius: 15px;
+    display: none;
+    z-index: 999;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}

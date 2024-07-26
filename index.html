@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Tiro e TNT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Título que aparece em todas as páginas -->
+    <h1 class="title">Shadow Spy</h1>
+    
+    <!-- Tela de login -->
+    <div id="login-screen" class="login-screen">
+        <form id="login-form">
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Usuário" required>
+            <input type="password" id="password" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+
+    <!-- Conteúdo do jogo -->
+    <div id="game-screen" class="game-screen" style="display: none;">
+        <!-- Imagem de fundo -->
+        <div id="background-overlay" class="background-overlay"></div>
+        <div class="container">
+            <h1>Pegue a <span>🔫</span> e mire em alguém.</h1>
+            <button onclick="mostrarTiro()"><span>💥</span></button>
+            <p id="resultado"></p>
+        </div>
+        <div class="container">
+            <h1>A <span>💣</span> foi armada, quem tentará desarmar?</h1>
+            <button onclick="mostrarBomba()"><span>💣</span></button>
+            <p id="S"></p>
+        </div>
+        <button class="show-rules-button" onclick="toggleRegras()">Regras do Jogo</button>
+        <div id="regras" class="regras">
+            <h2>Regras do Jogo📜</h2>
+            <p>1. Estritamente proibido perder a linha😡. Se você costuma se irritar fácil, vá dar uma volta🏃🏼.</p>
+            <p>2. Cada jogador tem um ❤️ e o objetivo do jogo é não deixar seu 💔 quebrar. Você escolhe como jogar.</p>
+            <p>3. Existem duas opções de jogo, o 🔫 (jogo padrão) e 💣 (jogo 👀) que aos poucos quebram seu 💘.</p>
+            <p>4. O jogador deve clicar na categoria escolhida e ler a mensagem em voz alta🗣️.</p>
+            <p>5. Após isso, os jogadores terão 3 segundos para 🫵🏻 (votar) na pessoa que acham que mais parecida com o conteúdo.</p>
+            <p>🎉 D I V I R T A - S E 🎉</p>
+            <button onclick="toggleRegras()">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
