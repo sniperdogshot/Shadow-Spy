@@ -1,4 +1,3 @@
-
 /* Estilo geral do body */
 body {
     margin: 0;
@@ -16,7 +15,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../img/fundo.jpg");
+    background-image: url("img/fundo.jpg");
     background-size: cover;
     background-position: center;
     z-index: -1;
@@ -25,126 +24,39 @@ body {
 /* Estilo do título geral */
 .title {
     position: absolute;
-    top: -40px;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 60px; /* Tamanho maior para o título */
-    color: #e0e0e0; /* Cinza claro e reluzente */
+    font-size: 60px;
+    color: #e0e0e0;
     text-shadow: 
-        2px 2px 5px rgba(0, 0, 0, 0.7), /* Sombra escura com maior desfocagem */
-        -2px -2px 5px rgba(0, 0, 0, 0.7), /* Sombra escura com maior desfocagem, em direção oposta */
-        2px -2px 5px rgba(0, 0, 0, 0.7), /* Sombra escura com maior desfocagem, em direção oposta */
-        -2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra escura com maior desfocagem, em direção oposta */
+        2px 2px 5px rgba(0, 0, 0, 0.7),
+        -2px -2px 5px rgba(0, 0, 0, 0.7),
+        2px -2px 5px rgba(0, 0, 0, 0.7),
+        -2px 2px 5px rgba(0, 0, 0, 0.7);
     z-index: 1;
 }
 
-/* Estilo da tela de login */
-.login-screen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    background: rgba(0, 0, 0, 0.7);
-    background-image: url("../img/fundo.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
-/* Formulário de login */
-#login-form {
-    background: rgba(0, 0, 0, 0.9);
-    padding: 40px;
-    border-radius: 15px;
-    text-align: center;
-    border: 3px solid #ff9800;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
-    width: 350px;
-}
-
-/* Campos de entrada */
-#login-form input {
-    display: block;
-    width: calc(100% - 20px);
-    padding: 15px;
-    margin: 15px auto;
-    border: 2px solid #ff9800;
-    border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.1);
-    color: white;
-    font-family: 'Press Start 2P', cursive;
-    font-size: 18px;
-    text-align: center;
-}
-
-/* Botão de login */
-#login-form button {
-    background-color: #28a745;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    cursor: pointer;
-    border-radius: 8px;
-    font-size: 18px;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    font-family: 'Press Start 2P', cursive;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-#login-form button:hover {
-    background-color: #218838;
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-#login-form button:active {
-    background-color: #1e7e34;
-    transform: scale(0.95);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-#game-screen {
-    display: none; /* Ocultar a tela do jogo por padrão */
-    position: relative;
-    width: 100%;
-    height: calc(100vh - 60px); /* Ajusta a altura para não sobrepor o título */
-    padding-top: 60px; /* Adiciona espaço no topo para o título */
-}
-
 /* Container do jogo */
-.container {
+.game-screen {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 100px 0;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
 }
 
-/* Estilo para os textos das mensagens do jogo */
-.container h1, .container p, .message-default {
-    font-size: 20px; /* Tamanho maior para as mensagens */
-    color: #e0e0e0; /* Cor do texto */
-    text-shadow: 
-        2px 2px 5px rgba(0, 0, 0, 0.7), /* Sombra escura com maior desfocagem */
-        -2px -2px 5px rgba(0, 0, 0, 0.7), /* Sombra escura com maior desfocagem, em direção oposta */
-        2px -2px 5px rgba(0, 0, 0, 0.7), /* Sombra escura com maior desfocagem, em direção oposta */
-        -2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra escura com maior desfocagem, em direção oposta */
+/* Container dos botões */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    z-index: 2;
 }
 
-/* Estilo para a mensagem padrão */
-.message-default {
-    font-size: 20px; /* Tamanho maior para a mensagem padrão */
-    color: #e0e0e0; /* Cor do texto */
-    
-    text-shadow: 
-        2px 2px 5px rgba(0, 0, 0, 0.7), /* Sombra escura com maior desfocagem */
-        -2px -2px 5px rgba(0, 0, 0, 0.7), /* Sombra escura com maior desfocagem, em direção oposta */
-        2px -2px 5px rgba(0, 0, 0, 0.7), /* Sombra escura com maior desfocagem, em direção oposta */
-        -2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra escura com maior desfocagem, em direção oposta */
-    max-width: 300px;
-}
-
-/* Botões gerais */
+/* Estilo dos botões */
 button {
     background-color: #ff9800;
     border: none;
@@ -152,49 +64,45 @@ button {
     padding: 15px 25px;
     text-align: center;
     font-size: 18px;
-    margin: 10px 2px;
+    margin: 10px;
     cursor: pointer;
     border-radius: 8px;
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
     font-family: 'Press Start 2P', cursive;
-    
 }
 
-/* Botão de atirar */
-#atirar {
-    background-color: #ff9800;
-}
-
-#atirar:hover {
+button:hover {
     background-color: #e68900;
     transform: scale(1.1);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
-#atirar:active {
+button:active {
     background-color: #ffffff;
     transform: scale(0.95);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Botão de bomba */
-#bomba {
-    background-color: #ffffff;
+/* Container dos resultados */
+.result-container {
+    margin-top: 20px;
+    z-index: 2;
 }
 
-#bomba:hover {
-    background-color: #f5f5f5;
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+/* Estilo das mensagens de resultado */
+.result-container p {
+    font-size: 20px;
+    color: #e0e0e0;
+    text-shadow: 
+        2px 2px 5px rgba(0, 0, 0, 0.7),
+        -2px -2px 5px rgba(0, 0, 0, 0.7),
+        2px -2px 5px rgba(0, 0, 0, 0.7),
+        -2px 2px 5px rgba(0, 0, 0, 0.7);
+    max-width: 300px;
+    text-align: center;
 }
 
-#bomba:active {
-    background-color: #ffffff;
-    transform: scale(0.95);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Estilo do botão de mostrar regras */
+/* Botão de mostrar regras */
 .show-rules-button {
     position: fixed;
     top: 20px;
@@ -228,12 +136,10 @@ button {
     display: none;
 }
 
-
-
 /* Regras do jogo */
 .regras {
     position: fixed;
-    bottom: -10px;
+    bottom: 20px;
     right: 20px;
     width: 300px;
     padding: 20px;

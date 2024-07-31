@@ -10,31 +10,26 @@
     <!-- Título que aparece em todas as páginas -->
     <h1 class="title">Shadow Spy</h1>
     
-    <!-- Tela de login -->
-    <div id="login-screen" class="login-screen">
-        <form id="login-form">
-            <h2>Login</h2>
-            <input type="text" id="username" placeholder="Usuário" required>
-            <input type="password" id="password" placeholder="Senha" required>
-            <button type="submit">Entrar</button>
-        </form>
-    </div>
-
     <!-- Conteúdo do jogo -->
-    <div id="game-screen" class="game-screen" style="display: none;">
+    <div id="game-screen" class="game-screen">
         <!-- Imagem de fundo -->
         <div id="background-overlay" class="background-overlay"></div>
-        <div class="container">
-            <h1>Pegue a <span>🔫</span> e mire em alguém.</h1>
-            <button onclick="mostrarTiro()"><span>💥</span></button>
+        
+        <!-- Botões de ação -->
+        <div class="button-container">
+            <button onclick="mostrarTiro()" id="botao-tiro"><span>🔫</span> Tiro</button>
+            <button onclick="mostrarBomba()" id="botao-bomba"><span>💣</span> Bomba</button>
+        </div>
+
+        <!-- Mensagens de resultado -->
+        <div class="result-container">
             <p id="resultado"></p>
         </div>
-        <div class="container">
-            <h1>A <span>💣</span> foi armada, quem tentará desarmar?</h1>
-            <button onclick="mostrarBomba()"><span>💣</span></button>
-            <p id="S"></p>
-        </div>
+
+        <!-- Botão de mostrar regras -->
         <button class="show-rules-button" onclick="toggleRegras()">Regras do Jogo</button>
+        
+        <!-- Regras do jogo -->
         <div id="regras" class="regras">
             <h2>Regras do Jogo📜</h2>
             <p>1. Estritamente proibido perder a linha😡. Se você costuma se irritar fácil, vá dar uma volta🏃🏼.</p>
