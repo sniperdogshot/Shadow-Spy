@@ -34,7 +34,7 @@ function gerarNumeroUnico(max, numerosGerados) {
 
 // Função para mostrar a imagem de tiro
 function mostrarTiro() {
-    var numeroAleatorio = gerarNumeroUnico(110, numerosGeradosTiro);
+    var numeroAleatorio = gerarNumeroUnico(127, numerosGeradosTiro);
     let mensagens = {
         1: "Um de nós tem uma vida dupla. Quem?",
         2: "Estamos todos em quarentena, contagiados por um vírus mortal e incurável. Quem criara uma epidemia?",
@@ -121,10 +121,10 @@ function mostrarTiro() {
         83: "Quem acredita em Papai Noel e Coelhinho da Páscoa?",
         84: "Quem te daria o melhor concelho amoroso?",
         85: "Quem tem coragem de se mudar sozinho para outro pais?",
-        86: "Quem ja visitou mais paises?",
-        87: "Em filmes de açao quem sempre torce para o vilao?",
+        86: "Quem já visitou mais países?",
+        87: "Em filmes de ação quem sempre torce para o vilão?",
         88: "Quem mais demora no banho?",
-        89: "Quem tem um diario ?",
+        89: "Quem tem um diário ?",
         90: "Quem acredita em amor a primeira vista?",
         91: "Quem é mais afetado pelas redes sociais?",
         92: "Quem seria uma celebridade?",
@@ -141,11 +141,30 @@ function mostrarTiro() {
         103: "Quem acredita em justiça pelas próprias mãos?",
         104: "Quem acredita em astrologia?",
         105: "Se o céu é o paraíso, quem não pode faltar por lá?",
-        105: "Com quem você sente que pode ser totalmente transparente e sincero(a)?",
-        107: "Com quem você sente que pode ser totalmente transparente e sincero(a)?",
+        106:  "Com quem você sente que pode ser totalmente transparente e sincero(a)?",
+        107:"Com quem você sente que pode ser totalmente transparente e sincero(a)?",
         108: "Quem acredita em reencarnação?",
         109: "Quem acredita em Lei do retorno?",
         110: "Quem gostaria de ser imortal (apenas você e mais ninguém)?",
+        111: "Quem faz bullying?",
+        112: "Quem deixaria de usar a internet por 1 ano, só para ficar com o amor da sua vida?",
+        113: "Quem prefere viajar sozinho do que com os amigos?",
+        114: "Quem já comeu ração de cachorro?",
+        115: "Quem é mais provável que durma na aula ou no trabalho??",
+        116: "Quem é mais provável que comece a namorar?",
+        117: "Quem é mais provável que se divorcie primeiro?",
+        118: "Quem é mais provável que seja demitido?",
+        119: "Quem é mais provável que fique rico?",
+        120: "Quem é mais provável que fique pelado em público?",
+        121: "Quem é mais provável que dê PT hoje?",
+        122: "Quem é mais provável que ria em um momento inadequado?",
+        123: "Quem é mais provável brigar com alguém até sair no soco?",
+        124: "Quem é mais provável que abandone o grupo de amigos?",
+        125: "Quem é mais provável que salve a vida de alguém?",
+        126: "Quem é mais provável que atropele alguém?",
+        127: "Quem você acha que é a pessoa mais bonita aqui?",
+
+
     }
     let mensagemAleatoria = mensagens[numeroAleatorio] || "Mensagem padrão para outros números.";
     document.getElementById('resultado').innerHTML = `<br>${mensagemAleatoria}`;
@@ -156,7 +175,7 @@ function mostrarTiro() {
 
 // Função para mostrar a imagem de bomba
 function mostrarBomba() {
-    var numeroAleatorio = gerarNumeroUnico(34, numerosGeradosBomba);
+    var numeroAleatorio = gerarNumeroUnico(61, numerosGeradosBomba);
     let mensagens = {
         1: "Cientistas descobriram formas de colocar outra genital no corpo. Quem seria o primeiro da fila?",
         2: "Alguém este apaixonado por outra pessoa dessa mesa. Quem?",
@@ -171,7 +190,7 @@ function mostrarBomba() {
         11: "Alguém tem fetiche por pessoas casadas. Quem?",
         12: "Quem quer organizar uma orgia agora entre nos mesmos?",
         13: "Alguém entre nos e uma estrela porno super famosa. Quem?",
-        14: "Com quem voce nunca faria menage?",
+        14: "Com quem você nunca faria ménage?",
         15: "Um de nos e voyeur. Quem?",
         16: "Quem é mais irresponsável na hora do sexo?",
         17: "Quem não se sentira culpado por dormir com a ex do coleguinha?",
@@ -188,10 +207,37 @@ function mostrarBomba() {
         28: "Quem usa a cabeça de baixo antes da de cima?",
         29: "Quem teria uma plantação e viveria disso?",
         30: "Quem acredita em relacionamento a distancia?",
-        31: "Quem prioriza inteligencia a aparencia?",
-        32: "Quem já ficou com irmão ou irma de um amigo?",
+        31: "Quem prioriza inteligência a aparência?",
+        32: "Quem já ficou com irmão ou irmã de um amigo?",
         33: "Quem já se apaixonou por um(a) amigo(a) e nunca teve coragem de falar?",
         34: "Quem Já se apaixonou pela(o) namorada(o) de um(a) amigo(a)?",
+        35: "Quem faria você se apaixonar só pra tirar vantagem de você?",
+        36: "Quem já fez sexting com alguém?",
+        37: "Com que amigo em comum você preferiria ir para a cama?",
+        38: "Quem é mais provável que volte com o ex?",
+        39: "Quem já teve uma fantasia sexual com algum professor?",
+        40: "Quem já gostou da irmã(o) de algum amigo?",
+        41: "Quem já gostou da irmã(o) do namorado?",
+        42: "Quem é mais provável que seja traído?",
+        43: "Quem é mais provável que seja infiel?",
+        44: "Quem é mais provável que fique com todos dessa sala?",
+        45: "Quem é mais provável que ainda seja virgem dessa roda?",
+        46: "Quem é mais provável que transe melhor dessa sala?",
+        47: "Quem é mais provável que tenha mandado ou recebido nudes?",
+        48: "Quem é mais provável que faça um ménage primeiro?",
+        49: "Quem é mais provável que tenha uma aventura com alguém mais velho?",
+        50: "Quem é mais provável que tenha ficado com um professor na escola/faculdade?",
+        51: "Quem é mais provável que precise de um sugar daddy para se sustentar?",
+        52: "Quem é mais provável que durma com alguém do mesmo sexo?",
+        53: "Quem é mais provável que morra primeiro?",
+        54: "Quem você acha que é a pessoa mais gostosa aqui?",
+        55: "Quem acha meu namorado atraente?",
+        56: "Quem já mentiu para alguém dessa roda?",
+        57: "Com quem você mais gostaria de ficar dessa roda?",
+        58: "Se você tivesse que escolher: com que outras duas pessoas dessa sala você faria um ménage?",
+        59: "Qual é o melhor casal dessa roda?",
+        60: "Que casal não vai estar junto até o próximo ano?",
+        61: "Quem daqui deveria ser um casal?",
     };
     let mensagemAleatoria = mensagens[numeroAleatorio] || "Mensagem padrão para outros números.";
     document.getElementById('resultado').innerHTML = `<br>${mensagemAleatoria}`;
